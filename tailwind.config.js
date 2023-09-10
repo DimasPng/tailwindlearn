@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        layout: "auto 1fr auto",
+      },
+      colors: {
+        "logo-main": "#98989",
+      },
+    },
   },
   plugins: [],
 };
